@@ -21,7 +21,11 @@ const routes = [
         path: '/events',
         name: 'Events',
         component: Activities
-    },    
+    },
+    {
+        path: '/',
+        redirect: '/entry'
+    }
 ]
 
 const router = new VueRouter({

@@ -37093,6 +37093,9 @@ var routes = [{
   path: '/events',
   name: 'Events',
   component: Activities
+}, {
+  path: '/',
+  redirect: '/entry'
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   mode: 'history',
