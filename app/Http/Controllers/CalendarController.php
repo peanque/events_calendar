@@ -16,8 +16,8 @@ class CalendarController extends Controller
     public function month_component_list(Request $request)
     {
         // $month = isset($request->month) ?
-        $month = '10';
-        $year = '2020';
+        $month = $request->month;        
+        $year = $request->year;
         $datelist = $this->create_calendar_list($month, $year);
         return $datelist;
     }
